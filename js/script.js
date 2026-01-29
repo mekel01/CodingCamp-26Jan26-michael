@@ -1,26 +1,38 @@
-// FUNGSI 1: MENGISI NAMA (Welcoming Speech)
-function replaceName() {
-  // Menggunakan timeout kecil agar prompt tidak muncul sebelum CSS termuat sempurna
-  setTimeout(() => {
-    let name = prompt("Halo, selamat datang! Siapa nama Anda?", "");
-    
-    const nameElement = document.getElementById("name");
-    
-    // Validasi: Jika user klik cancel (null) atau mengosongkan nama
-    if (name === null || name.trim() === "") {
-      nameElement.innerHTML = "Michael Sharon N";
-    } else {
-      nameElement.innerHTML = name;
-    }
-  }, 500); 
-}
-
-// DOMContentLoaded untuk trigger prompt
+// -------------------------
+// WELCOME MODAL
+// -------------------------
 document.addEventListener("DOMContentLoaded", function() {
-  replaceName();
+  const modal = document.getElementById("welcomeModal");
+  const input = document.getElementById("modalNameInput");
+  const submitBtn = document.getElementById("modalSubmitBtn");
+  const nameSpan = document.getElementById("name");
+
+  // Tampilkan modal
+  modal.classList.remove("hidden");
+
+  // Fokus input
+  input.focus();
+
+  // Fungsi submit modal
+  submitBtn.addEventListener("click", function() {
+    let name = input.value.trim();
+    if (name === "") {
+      nameSpan.innerText = "Michael Sharon N";
+    } else {
+      nameSpan.innerText = name;
+    }
+    modal.classList.add("hidden"); // sembunyikan modal
+  });
+
+  // Tekan Enter di input untuk submit
+  input.addEventListener("keypress", function(e) {
+    if (e.key === "Enter") submitBtn.click();
+  });
 });
 
-// FUNGSI 2: FORM HANDLING & VALIDATION (Sama seperti sebelumnya)
+// -------------------------
+// FORM HANDLING
+// -------------------------
 document.getElementById("contactForm2").addEventListener("submit", function(e) {
   e.preventDefault();
 
@@ -46,5 +58,5 @@ document.getElementById("contactForm2").addEventListener("submit", function(e) {
   `;
 
   alert("Terima kasih " + nama + ", pesan Anda berhasil ditampilkan!");
-  this.reset(); 
+  this.reset();
 });
