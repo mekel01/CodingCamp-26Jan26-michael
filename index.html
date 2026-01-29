@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio | Michael Sharon Nathanael</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-100">
+
+<!-- NAVBAR -->
+<nav class="bg-slate-900 text-white px-6 py-4 flex justify-between items-center">
+  <div class="flex items-center gap-3 text-xl font-bold">
+    <i class="fa-solid fa-code text-blue-400"></i>
+    <span>MyProfile</span>
+  </div>
+  <ul class="flex gap-6">
+    <li><a href="#home" class="hover:text-blue-400">Home</a></li>
+    <li><a href="#profile" class="hover:text-blue-400">Our Profile</a></li>
+    <li><a href="#portfolio" class="hover:text-blue-400">Portfolio</a></li>
+    <li><a href="#contact" class="hover:text-blue-400">Message Us</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center">
+  <div>
+    <h1 class="text-5xl font-bold mb-4">
+      Hi, <span id="name" class="text-yellow-300"></span> 👋
+    </h1>
+    <p>Ini adalah website latihan pertama</p>
+  </div>
+</section>
+
+<!-- OUR PROFILE -->
+<section id="profile" class="py-20 bg-white">
+  <div class="max-w-5xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Our Profile</h2>
+
+    <div class="bg-slate-100 p-8 rounded shadow mb-10">
+      <h3 class="text-xl font-semibold mb-3">About the Company</h3>
+      <p>
+        Website ini dibuat sebagai project RevoU Coding Camp Software Engineering
+        menggunakan HTML, Tailwind CSS, dan JavaScript.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 mb-16">
+      <div class="bg-slate-100 p-8 rounded shadow">
+        <h3 class="text-xl font-semibold mb-3">Vision</h3>
+        <p>Menjadi developer profesional dan inovatif di bidang teknologi.</p>
+      </div>
+
+      <div class="bg-slate-100 p-8 rounded shadow">
+        <h3 class="text-xl font-semibold mb-3">Mission</h3>
+        <ul class="list-disc ml-6 space-y-1">
+          <li>Mengembangkan skill pemrograman</li>
+          <li>Menjadi Software Engineer</li>
+          <li>Membuat website responsif</li>
+          <li>Mengikuti tren teknologi</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- OUR HEADQUARTER (MASIH DALAM PROFILE) -->
+    <h3 class="text-2xl font-bold mb-8">Our Headquarter</h3>
+    <div class="flex justify-around text-center">
+      <div>
+        <div class="w-32 h-32 border-2 border-gray-400 rounded-full mx-auto"></div>
+        <p class="mt-4">Jakarta</p>
+      </div>
+      <div>
+        <div class="w-32 h-32 border-2 border-gray-400 rounded-full mx-auto"></div>
+        <p class="mt-4">Bandung</p>
+      </div>
+      <div>
+        <div class="w-32 h-32 border-2 border-gray-400 rounded-full mx-auto"></div>
+        <p class="mt-4">Surabaya</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="py-20 bg-slate-100">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-center mb-10">Portfolio</h2>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-6 rounded shadow text-center">
+        <div class="h-32 bg-gray-200 mb-4 flex items-center justify-center">Image</div>
+        <h3 class="font-semibold">Website Profile</h3>
+        <p class="text-sm">HTML & CSS</p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow text-center">
+        <div class="h-32 bg-gray-200 mb-4 flex items-center justify-center">Image</div>
+        <h3 class="font-semibold">Admin Dashboard</h3>
+        <p class="text-sm">Layout Responsif</p>
+      </div>
+
+      <div class="bg-white p-6 rounded shadow text-center">
+        <div class="h-32 bg-gray-200 mb-4 flex items-center justify-center">Image</div>
+        <h3 class="font-semibold">Ticket Booking</h3>
+        <p class="text-sm">Web Pemesanan</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MESSAGE US -->
+<section id="contact" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+    <h2 class="text-3xl font-bold mb-10">Message Us</h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+      <form id="contactForm2" class="bg-slate-100 p-8 rounded shadow space-y-4">
+
+        <div class="grid grid-cols-3 items-center gap-4">
+          <label>Nama</label>
+          <input id="nama2" type="text" class="col-span-2 border p-2">
+        </div>
+
+        <div class="grid grid-cols-3 items-center gap-4">
+          <label>Tanggal Lahir</label>
+          <input id="tgl2" type="date" class="col-span-2 border p-2">
+        </div>
+
+        <div class="grid grid-cols-3 items-center gap-4">
+          <label>Jenis Kelamin</label>
+          <div class="col-span-2 flex gap-6">
+            <label><input type="radio" name="jk" value="Laki-Laki"> Laki-Laki</label>
+            <label><input type="radio" name="jk" value="Perempuan"> Perempuan</label>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4">
+          <label>Pesan</label>
+          <textarea id="pesan2" class="col-span-2 border p-2"></textarea>
+        </div>
+
+        <button class="w-full border bg-gray-300 py-2">Submit</button>
+      </form>
+
+      <div class="bg-slate-100 p-8 rounded shadow">
+        <div id="currentTime" class="text-sm mb-4"></div>
+        <div id="outputData" class="text-sm space-y-2"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="js/script.js"></script>
+</body>
+</html>
