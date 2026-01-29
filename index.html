@@ -1,162 +1,177 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title> portofolio|Michael Sharon N</title>
+  <title>Portofolio | Michael Sharon N</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="bg-slate-100">
+<body class="bg-slate-100 font-sans">
 
-<!-- NAVBAR -->
-<nav class="bg-slate-900 text-white px-6 py-4 flex justify-between items-center">
+<nav class="bg-slate-900 text-white px-6 py-4 flex justify-between items-center sticky top-0 z-50 shadow-lg">
   <div class="flex items-center gap-3 text-xl font-bold">
-    <i class="fa-solid fa-code text-blue-400"></i>
+    <img src="https://static.wixstatic.com/media/ab5dd5_2d3b5609069941659a1ef23abe746fe5~mv2.png/v1/fill/w_218,h_218,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/RevoU-logo.png" 
+         alt="RevoU Logo" 
+         class="h-8 w-auto object-contain">
     <span>MyProfile</span>
   </div>
   <ul class="flex gap-6">
-    <li><a href="#home" class="hover:text-blue-400">Home</a></li>
-    <li><a href="#profile" class="hover:text-blue-400">Our Profile</a></li>
-    <li><a href="#portfolio" class="hover:text-blue-400">Portfolio</a></li>
-    <li><a href="#contact" class="hover:text-blue-400">Message Us</a></li>
+    <li><a href="#home" class="hover:text-blue-400 transition">Home</a></li>
+    <li><a href="#profile" class="hover:text-blue-400 transition">Our Profile</a></li>
+    <li><a href="#portfolio" class="hover:text-blue-400 transition">Portfolio</a></li>
+    <li><a href="#contact" class="hover:text-blue-400 transition">Message Us</a></li>
   </ul>
 </nav>
 
 
-<!-- HOME -->
 <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600 text-white text-center">
-  <div>
+  <div class="px-4">
     <h1 class="text-5xl font-bold mb-4">
-      Hi, <span id="name" class="text-yellow-300"></span> 👋
+      Hi, <span id="name" class="text-yellow-300">Michael</span> 👋
     </h1>
-    <p>Ini adalah website latihan pertama</p>
+    <p class="text-xl opacity-90">Ini adalah website latihan pertama saya bersama RevoU.</p>
   </div>
 </section>
 
-<!-- OUR PROFILE -->
 <section id="profile" class="py-20 bg-white">
   <div class="max-w-5xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-10">Our Profile</h2>
+    <h2 class="text-3xl font-bold text-center mb-10 border-b-4 border-blue-500 w-fit mx-auto pb-2">Our Profile</h2>
 
     <div class="bg-slate-100 p-8 rounded shadow mb-10">
       <h3 class="text-xl font-semibold mb-3">About the Company</h3>
-      <p>
+      <p class="text-gray-700 leading-relaxed">
         Website ini dibuat sebagai project RevoU Coding Camp Software Engineering
-        menggunakan HTML, Tailwind CSS, dan JavaScript.
+        menggunakan HTML, Tailwind CSS, dan JavaScript. Fokus utama adalah membuat website yang responsif dan fungsional.
       </p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-8 mb-16">
-      <div class="bg-slate-100 p-8 rounded shadow">
-        <h3 class="text-xl font-semibold mb-3">Vision</h3>
-        <p>Menjadi developer profesional dan inovatif di bidang teknologi.</p>
+      <div class="bg-slate-100 p-8 rounded shadow border-t-4 border-blue-500">
+        <h3 class="text-xl font-semibold mb-3 text-blue-600">Vision</h3>
+        <p>Menjadi developer profesional dan inovatif yang mampu memberikan solusi teknologi terbaik.</p>
       </div>
 
-      <div class="bg-slate-100 p-8 rounded shadow">
-        <h3 class="text-xl font-semibold mb-3">Mission</h3>
+      <div class="bg-slate-100 p-8 rounded shadow border-t-4 border-purple-500">
+        <h3 class="text-xl font-semibold mb-3 text-purple-600">Mission</h3>
         <ul class="list-disc ml-6 space-y-1">
-          <li>Mengembangkan skill pemrograman</li>
-          <li>Menjadi Software Engineer</li>
-          <li>Membuat website responsif</li>
-          <li>Mengikuti tren teknologi</li>
+          <li>Mengembangkan skill pemrograman setiap hari.</li>
+          <li>Menjadi Software Engineer yang handal.</li>
+          <li>Membuat website yang user-friendly dan responsif.</li>
+          <li>Terus mengikuti tren teknologi terbaru.</li>
         </ul>
       </div>
     </div>
 
-    <!-- OUR HEADQUARTER (MASIH DALAM PROFILE) -->
-    <h3 class="text-2xl font-bold mb-8">Our Headquarter</h3>
-    <div class="flex justify-around text-center">
+    <h3 class="text-2xl font-bold mb-8 text-center md:text-left">Our Headquarter</h3>
+    <div class="flex flex-col md:flex-row justify-around gap-8 text-center">
       <div>
-        <div class="w-32 h-32 border-2 border-gray-400 rounded-full mx-auto"></div>
-        <p class="mt-4">Jakarta</p>
+        <div class="w-32 h-32 border-4 border-white shadow-lg rounded-full mx-auto overflow-hidden">
+          <img src="https://lh3.googleusercontent.com/u/0/d/1OBU8mmEbzYjmDyw0Izu6ep8ASxqLo4UL" alt="Jakarta" class="w-full h-full object-cover">
+        </div>
+        <p class="mt-4 font-bold">Jakarta</p>
       </div>
       <div>
-        <div class="w-32 h-32 border-2 border-gray-400 rounded-full mx-auto"></div>
-        <p class="mt-4">Bandung</p>
+        <div class="w-32 h-32 border-4 border-white shadow-lg rounded-full mx-auto overflow-hidden">
+          <img src="https://lh3.googleusercontent.com/u/0/d/17r1Q0wwkFqeFESlEM0W_RTlAYtRejkii" alt="Bandung" class="w-full h-full object-cover">
+        </div>
+        <p class="mt-4 font-bold">Bandung</p>
       </div>
       <div>
-        <div class="w-32 h-32 border-2 border-gray-400 rounded-full mx-auto"></div>
-        <p class="mt-4">Surabaya</p>
+        <div class="w-32 h-32 border-4 border-white shadow-lg rounded-full mx-auto overflow-hidden">
+          <img src="https://lh3.googleusercontent.com/u/0/d/1PC5mbIcf8ZF5TBTAf3MlMID0BDowABpq" alt="Surabaya" class="w-full h-full object-cover">
+        </div>
+        <p class="mt-4 font-bold">Surabaya</p>
       </div>
     </div>
 
   </div>
 </section>
 
-<!-- PORTFOLIO -->
-<section id="portfolio" class="py-20 bg-slate-100">
+<section id="portfolio" class="py-20 bg-slate-100 text-center">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-10">Portfolio</h2>
+    <h2 class="text-3xl font-bold mb-10 border-b-4 border-blue-500 w-fit mx-auto pb-2">Portfolio Project</h2>
 
     <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white p-6 rounded shadow text-center">
-        <div class="h-32 bg-gray-200 mb-4 flex items-center justify-center">Image</div>
-        <h3 class="font-semibold">Website Profile</h3>
-        <p class="text-sm">HTML & CSS</p>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+        <div class="h-48 bg-gray-200 mb-4 overflow-hidden rounded-lg">
+          <img src="https://lh3.googleusercontent.com/u/0/d/1XjBVUDnRG4Vb3Pfc-fcUYYQJxJ8hoLbZ" alt="Website Profile" class="w-full h-full object-cover">
+        </div>
+        <h3 class="font-bold text-lg">Website Profile</h3>
+        <p class="text-sm text-gray-500 italic">HTML & CSS Framework</p>
       </div>
 
-      <div class="bg-white p-6 rounded shadow text-center">
-        <div class="h-32 bg-gray-200 mb-4 flex items-center justify-center">Image</div>
-        <h3 class="font-semibold">Admin Dashboard</h3>
-        <p class="text-sm">Layout Responsif</p>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+        <div class="h-48 bg-gray-200 mb-4 overflow-hidden rounded-lg">
+          <img src="https://lh3.googleusercontent.com/u/0/d/1kwXnZP4X9LjIELreDMARRgsdBG-AJEJu" alt="Admin Dashboard" class="w-full h-full object-cover">
+        </div>
+        <h3 class="font-bold text-lg">Admin Dashboard</h3>
+        <p class="text-sm text-gray-500 italic">Layout Responsif</p>
       </div>
 
-      <div class="bg-white p-6 rounded shadow text-center">
-        <div class="h-32 bg-gray-200 mb-4 flex items-center justify-center">Image</div>
-        <h3 class="font-semibold">Ticket Booking</h3>
-        <p class="text-sm">Web Pemesanan</p>
+      <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2">
+        <div class="h-48 bg-gray-200 mb-4 overflow-hidden rounded-lg">
+          <img src="https://lh3.googleusercontent.com/u/0/d/1UOzyAu6uem8PlrGa1s9NA_z7llNTI3N5" alt="Ticket Booking" class="w-full h-full object-cover">
+        </div>
+        <h3 class="font-bold text-lg">Ticket Booking</h3>
+        <p class="text-sm text-gray-500 italic">Web App Development</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- MESSAGE US -->
 <section id="contact" class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-6">
     <h2 class="text-3xl font-bold mb-10">Message Us</h2>
 
     <div class="grid md:grid-cols-2 gap-10">
-      <form id="contactForm2" class="bg-slate-100 p-8 rounded shadow space-y-4">
-
+      <form id="contactForm2" class="bg-slate-100 p-8 rounded shadow-lg space-y-4">
         <div class="grid grid-cols-3 items-center gap-4">
-          <label>Nama</label>
-          <input id="nama2" type="text" class="col-span-2 border p-2">
+          <label class="font-medium">Nama</label>
+          <input id="nama2" type="text" required placeholder="Nama Lengkap" class="col-span-2 border p-2 rounded focus:ring-2 focus:ring-blue-400 outline-none">
         </div>
 
         <div class="grid grid-cols-3 items-center gap-4">
-          <label>Tanggal Lahir</label>
-          <input id="tgl2" type="date" class="col-span-2 border p-2">
+          <label class="font-medium">Tanggal Lahir</label>
+          <input id="tgl2" type="date" required class="col-span-2 border p-2 rounded focus:ring-2 focus:ring-blue-400 outline-none">
         </div>
 
         <div class="grid grid-cols-3 items-center gap-4">
-          <label>Jenis Kelamin</label>
+          <label class="font-medium">Jenis Kelamin</label>
           <div class="col-span-2 flex gap-6">
-            <label><input type="radio" name="jk" value="Laki-Laki"> Laki-Laki</label>
-            <label><input type="radio" name="jk" value="Perempuan"> Perempuan</label>
+            <label class="cursor-pointer"><input type="radio" name="jk" value="Laki-Laki" required> Laki-Laki</label>
+            <label class="cursor-pointer"><input type="radio" name="jk" value="Perempuan"> Perempuan</label>
           </div>
         </div>
 
         <div class="grid grid-cols-3 gap-4">
-          <label>Pesan</label>
-          <textarea id="pesan2" class="col-span-2 border p-2"></textarea>
+          <label class="font-medium">Pesan</label>
+          <textarea id="pesan2" required placeholder="Tulis pesan Anda..." class="col-span-2 border p-2 rounded h-32 focus:ring-2 focus:ring-blue-400 outline-none"></textarea>
         </div>
 
-        <button class="w-full border bg-gray-300 py-2">Submit</button>
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded transition duration-300">Submit</button>
       </form>
 
-      <div class="bg-slate-100 p-8 rounded shadow">
-        <div id="currentTime" class="text-sm mb-4"></div>
-        <div id="outputData" class="text-sm space-y-2"></div>
+      <div class="bg-slate-100 p-8 rounded shadow-lg flex flex-col justify-between">
+        <div>
+          <h3 class="font-bold text-lg mb-4 border-b pb-2">Hasil Input:</h3>
+          <div id="outputData" class="text-sm space-y-3">
+             <p class="text-gray-400 italic">Belum ada data yang dikirim.</p>
+          </div>
+        </div>
+        <div id="currentTime" class="text-xs text-gray-500 mt-6 pt-4 border-t italic text-right"></div>
       </div>
     </div>
   </div>
 </section>
+
+<footer class="bg-slate-900 text-white text-center py-6">
+  <p>&copy; 2024 Michael Sharon N | RevoU Software Engineering Student</p>
+</footer>
 
 <script src="js/script.js"></script>
 </body>
